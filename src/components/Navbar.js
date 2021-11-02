@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 //import PropTypes from 'prop-types'
-import "./Navbar.css";
+import './css/Navbar.css';
 
 export default class Navbar extends Component {
     /* static propTypes = {
@@ -12,7 +12,7 @@ export default class Navbar extends Component {
             <div className="nav">
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="/"><h2>KHABARI</h2></a>
+                        <a className="navbar-brand" href="/"><h2 className="khabari">KHABARI</h2></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

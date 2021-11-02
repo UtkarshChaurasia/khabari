@@ -11,9 +11,8 @@
 
 .h2, h2{
     background: -webkit-linear-gradient(rgb(116, 174, 240), #022d7c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Brush Script MT';
-  font-weight: bolder;
-  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Brush Script MT';
+    font-weight: bolder;
 }
