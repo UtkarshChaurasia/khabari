@@ -14,7 +14,7 @@ export class News extends Component {
 
 
     async componentDidMount(){
-        let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=2aa2674f90774e84b1511c6986845e88";
+        let url = "https://saurav.tech/NewsAPI/top-headlines/category/general/in.json";
         this.setState({loading:true});
         let data = await fetch(url);
         let parsedData = await data.json();
