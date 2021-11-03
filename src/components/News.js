@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 import Spinner from './Spinner';
+import PropTypes from 'prop-types'
+
 
 export class News extends Component {
+
+    static defaultProps = {
+        country: 'in',
+        category: 'general',
+
+    }
     
     constructor(){
         super();
@@ -14,7 +22,7 @@ export class News extends Component {
 
 
     async componentDidMount(){
-        let url = "https://saurav.tech/NewsAPI/top-headlines/category/general/in.json";
+        let url = `https://saurav.tech/NewsAPI/top-headlines/category/${this.props.category}/${this.props.country}.json`;
         this.setState({loading:true});
         let data = await fetch(url);
         let parsedData = await data.json();
@@ -29,7 +37,7 @@ export class News extends Component {
                 {this.state.loading && <Spinner/>}
                 <div className="row">
                 {this.state.articles.map((element)=>{
-                    return <div className="col-md-4" key={element.url}>
+                    return <div className="col-md-4 my-3" key={element.url}>
                     <NewsItem title={element.title?element.title.slice(0,45):""} description={element.description?element.description.slice(0, 88):""} imageUrl={element.urlToImage} newsUrl={element.url}/>
                 </div>
                 })}

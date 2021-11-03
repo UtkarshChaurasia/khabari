@@ -1,5 +1,5 @@
-.nav{
-    height:65px;
+ .nav{
+    height:80px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0px 1px 8px #0345c0;
@@ -11,16 +11,33 @@
     position: sticky;
     background-color: white;
 
+} 
+
+img{
+    width: 200px;
+    height: 60px;
 }
 
+.nav-link{
+    font-weight: bold;
+    font-size: 18px;
+}
+.dropdown-menu{
+    margin-top: 100px;
+    border-radius: 5px;
+}
+.dropdown-item{
+    font-weight: bold;
+    font-size: 15px;
+}
 /*.h2, h2{
     color: #c55c5c;
 }*/
-
+/* 
 .h2, h2{
     background: -webkit-linear-gradient(rgb(116, 174, 240), #022d7c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Brush Script MT';
     font-weight: bolder;
-}
+} */
