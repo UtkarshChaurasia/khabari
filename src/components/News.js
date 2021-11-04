@@ -9,7 +9,11 @@ export class News extends Component {
     static defaultProps = {
         country: 'in',
         category: 'general',
+    }
 
+    static propTypes = {
+        country: PropTypes.string,
+        category: PropTypes.string,
     }
     
     constructor(){
