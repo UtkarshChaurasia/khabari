@@ -7,8 +7,9 @@ img.card-img-top{
 }
 
 span{
-    z-index: 1;
+    z-index: 0;
 }
 span.start-100{
     left: 90%!important;
+    
 }
