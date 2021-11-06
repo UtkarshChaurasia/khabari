@@ -6,7 +6,9 @@ img.card-img-top{
     height: 200px;
 }
 
-
+span{
+    z-index: 1;
+}
 span.start-100{
     left: 90%!important;
 }

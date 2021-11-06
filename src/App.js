@@ -33,7 +33,7 @@ export default class App extends Component {
         <Navbar/>
         <Switch>
           <Route exact path="/"><News key="general" country="in" category="general"/></Route>
-          {/* <Route exact path="/general"><News key="general" country="in" category="general"/></Route> */}
+          <Route exact path="/general"><News key="general" country="in" category="general"/></Route>
           <Route exact path="/business"><News key="business" country="in" category="business"/></Route>
           <Route exact path="/entertainment"><News key="entertainment" country="in" category="entertainment"/></Route>
           <Route exact path="/health"><News key="health" country="in" category="health"/></Route>
