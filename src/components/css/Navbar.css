@@ -29,6 +29,44 @@ img{
     font-weight: bold;
     font-size: 15px;
 }
+
+.toggle-mode{
+    padding-left: 50px;
+}
+
+#toggle{
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 24px;
+    border-radius: 24px;
+    background-color: #222;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+                inset 0 8px 8px rgba(0,0,0,0.1),
+                inset 0 -4px 4px rgba(0,0,0,0.1);
+}
+
+#toggle .indicator{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5),
+                inset 0 4px 4px rgba(255,255,255,0.2),
+                inset 0 -4px 4px rgba(255,255,255,0.2);
+    transition: 0.5s;
+
+}
+
+#toggle.active .indicator{
+    Left: 24px;
+}
 /*.h2, h2{
     color: #c55c5c;
 }*/

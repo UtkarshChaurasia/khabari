@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './css/Navbar.css';
 import logo from './logo2.png';
 export default class Navbar extends Component {
     /* static propTypes = {
         prop: PropTypes
     } */
-
+    
+    
     render() {
+
         return (
             <div className="nav" >
                 <nav className="navbar fixed-top navbar-expand-lg navbar-light">
                     <div className="container-fluid">
-                        <Link className="navbar-brand" to="/"><img src={logo} alt="logo" /></Link>
+                        <NavLink className="navbar-brand" to="/"><img src={logo} alt="logo" /></NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -20,41 +22,32 @@ export default class Navbar extends Component {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li className="nav-item mx-2">
-                                        <Link className="nav-link active" aria-current="page" to="/general">General</Link>
+                                        <NavLink className="nav-link" aria-current="page" to="/">General</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <Link className="nav-link" to="/business">Business</Link>
+                                        <NavLink className="nav-link" to="/business">Business</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <Link className="nav-link" to="/technology">Technology</Link>
+                                        <NavLink className="nav-link" to="/technology">Technology</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <Link className="nav-link" to="/science">Science</Link>
+                                        <NavLink className="nav-link" to="/science">Science</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <Link className="nav-link" to="/sports">Sports</Link>
+                                        <NavLink className="nav-link" to="/sports">Sports</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <Link className="nav-link" to="/health">Health</Link>
+                                        <NavLink className="nav-link" to="/health">Health</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <Link className="nav-link" to="/entertainment">Entertainment</Link>
+                                        <NavLink className="nav-link" to="/entertainment">Entertainment</NavLink>
                                     </li>
-                                    {/* <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Categories
-                                        </a>
-                                        <ul className="dropdown-menu my-2" aria-labelledby="navbarDropdown">
-                                            <li><a className="dropdown-item" to="/">General</a></li>
-                                            <li><a className="dropdown-item" to="/">Business</a></li>
-                                            <li><a className="dropdown-item" to="/">Technology</a></li>
-                                            <li><a className="dropdown-item" to="/">Science</a></li>
-                                            <li><a className="dropdown-item" to="/">Sports</a></li>
-                                            <li><a className="dropdown-item" to="/">Health</a></li>
-                                            <li><a className="dropdown-item" to="/">Entertainment</a></li>
-                                        </ul>
-                                    </li> */}
                                 </ul>
+                                <div className="toggle-mode">
+                                    <div className="mx-2" id="toggle">                                 
+                                        <i className="indicator"></i>                                      
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

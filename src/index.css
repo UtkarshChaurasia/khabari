@@ -1,0 +1,8 @@
+/* html{
+    background: #000;
+    filter: invert(1) hue-rotate(180deg);
+}
+
+img, video, iframe, canvas, svg{
+    filter: invert(1) hue-rotate(180deg);
+} */

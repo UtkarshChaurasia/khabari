@@ -5,3 +5,8 @@
 img.card-img-top{
     height: 200px;
 }
+
+
+span.start-100{
+    left: 90%!important;
+}
