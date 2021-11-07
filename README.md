@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #  <img src = "public/favicon-96x96.png" width="60" height = "60"/>&emsp;[KHABARI]()
 =======
 #  <img src = "public/favicon-96x96.png" width="60" height = "60"/>&emsp;[KHABARI](https://youtu.be/4llhM77fhhw)
