@@ -9,7 +9,7 @@ const NavBar = (props) => {
 
     return (
 
-        <nav className={`navbar navbar-expand-lg navbar-${props.mode}`}>
+        <nav className={`navbar navbar-expand-lg navbar-${props.mode} py-0`}>
             <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/"><img className="logo" src={logo} alt="logo" /></NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
