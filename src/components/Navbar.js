@@ -1,16 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import './css/Navbar.css';
-import logo from './logo2.png';
+import logo from './Khabari1.png';
+import DarkModeToggle from "react-dark-mode-toggle";
 
 
-const NavBar = () => {
+const NavBar = (props) => {
 
     return (
-        <div className="nav" >
-            <nav className="navbar fixed-top navbar-expand-lg navbar-light">
+        <div className={`nav-${props.mode}`} >
+            <nav className={`navbar fixed-top navbar-expand-lg navbar-${props.mode}`}>
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/"><img src={logo} alt="logo" /></NavLink>
+                    <NavLink className="navbar-brand" to="/"><img className="logo" src={logo} alt="logo" /></NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -39,10 +40,8 @@ const NavBar = () => {
                                     <NavLink className="nav-link" to="/entertainment">Entertainment</NavLink>
                                 </li>
                             </ul>
-                            <div className="toggle-mode">
-                                <div className="mx-2" id="toggle">
-                                    <i className="indicator"></i>
-                                </div>
+                            <div className="toggle-btn mx-3">
+                                <DarkModeToggle onChange={props.toggleMode} checked={props.isDarkMode} size={70}></DarkModeToggle>
                             </div>
                         </div>
                     </div>

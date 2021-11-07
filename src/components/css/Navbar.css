@@ -1,72 +1,48 @@
- .nav{
-    height:80px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 1px 8px #0345c0;
-    display: flex;
-    align-items: center;
-    top: 0;
-    z-index: 1;
-    position: -webkit-sticky;
-    position: sticky;
-    background-color: white;
-
-} 
-
-img{
-    width: 200px;
-    height: 60px;
+.nav-light {
+  height: 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 1px 8px #0345c0;
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  transition: 0.9s;
 }
 
-.nav-link{
-    font-weight: bold;
-    font-size: 18px;
-}
-.dropdown-menu{
-    border-radius: 5px;
-    z-index: 1;
-}
-.dropdown-item{
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.toggle-mode{
-    padding-left: 50px;
+.nav-dark {
+  height: 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 1px 8px #0345c0;
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #04222a;
+  transition: 0.9s;
 }
 
-#toggle{
-    position: relative;
-    display: block;
-    width: 48px;
-    height: 24px;
-    border-radius: 24px;
-    background-color: #222;
-    transition: 0.5s;
-    cursor: pointer;
-    box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
-                inset 0 8px 8px rgba(0,0,0,0.1),
-                inset 0 -4px 4px rgba(0,0,0,0.1);
+img {
+  width: 220px;
+  height: 60px;
+}
+.logo{
+    padding-left: 20px;
 }
 
-#toggle .indicator{
-    position: absolute;
-    top: 0;
-    Left: 0;
-    width: 24px;
-    height: 24px;
-    background: linear-gradient(to bottom, #444, #222);
-    border-radius: 50%;
-    transform: scale(0.9);
-    box-shadow: 0 8px 40px rgba(0,0,0,0.5),
-                inset 0 4px 4px rgba(255,255,255,0.2),
-                inset 0 -4px 4px rgba(255,255,255,0.2);
-    transition: 0.5s;
-
+.nav-link {
+  font-weight: bold;
+  font-size: 18px;
 }
 
-#toggle.active .indicator{
-    Left: 24px;
+.toggle-btn {
+  padding-left: 50px;
 }
 /*.h2, h2{
     color: #c55c5c;
@@ -78,4 +54,13 @@ img{
     -webkit-text-fill-color: transparent;
     font-family: 'Brush Script MT';
     font-weight: bolder;
-} */
+} 
+
+{Navbar
+    background: #02151a;
+    opacity: 1;
+}
+
+
+
+*/
