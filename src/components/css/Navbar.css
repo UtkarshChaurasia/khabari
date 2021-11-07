@@ -1,7 +1,7 @@
-.nav-light {
-  height: 80px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+
+ .navbar-light {
+  
+  
   box-shadow: 0px 1px 8px #0345c0;
   display: flex;
   align-items: center;
@@ -11,12 +11,11 @@
   position: sticky;
   background-color: white;
   transition: 0.9s;
-}
+} 
 
-.nav-dark {
-  height: 80px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+.navbar-dark {
+  
+
   box-shadow: 0px 1px 8px #0345c0;
   display: flex;
   align-items: center;
@@ -26,6 +25,7 @@
   position: sticky;
   background-color: #04222a;
   transition: 0.9s;
+  width: 100%;
 }
 
 img {

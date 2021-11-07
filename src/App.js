@@ -52,7 +52,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="main">
       <Router>
         <Navbar mode={Mode} toggleMode={toggleMode} isDarkMode={isDarkMode}/>
         <Switch>
