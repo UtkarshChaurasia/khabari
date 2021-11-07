@@ -1,4 +1,4 @@
-#  <img src = "public/favicon-96x96.png" width="60" height = "60"/>&nbsp;[KHABARI](https://youtu.be/4llhM77fhhw)
+#  <img src = "public/favicon-96x96.png" width="60" height = "60"/>&emsp;[KHABARI]()
 
 Khabari is a news webapp where users can update themselves with the latest stuff going on around the world. Users can read news according to different categories. There are light and dark modes in the app.
 
